@@ -111,6 +111,18 @@
     }, 3000);
   </script>
 
+<!-- Outras partes do site... -->
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    if (window.location.search) {
+      const urlLimpa = window.location.origin + window.location.pathname;
+      window.history.replaceState({}, document.title, urlLimpa);
+    }
+  });
+</script>
+</body>
+</html>
 
 
 </body></html>
